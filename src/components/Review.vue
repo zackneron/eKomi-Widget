@@ -148,7 +148,7 @@
 		gap: 10px;
 		width: 100%;
 		@media (max-width: 420px) {
-			max-width: 372px;
+			max-width: 350px;
 		}
 
 		@include sm {
@@ -171,7 +171,7 @@
 			border-radius: 4px;
 			
 			@media (max-width: 420px) {
-				max-width: 170px;
+				max-width: 159px;
 			}
 			max-width: calc((100% / 2) - 5px);
 			padding: 15px;

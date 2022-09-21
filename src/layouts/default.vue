@@ -1,5 +1,5 @@
 <template>
-    <v-app light>
+    <v-app class="v-review" light>
         <v-main>
             <Nuxt />
         </v-main>
@@ -26,8 +26,7 @@ export default {
         font-family: "inter-regular";
         color: $black;
     }
-
-    .new-text {
-        color: #656565;
+    .v-review {
+        padding: 20px;
     }
 </style>

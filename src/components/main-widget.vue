@@ -2,7 +2,7 @@
 	<div>
 		<v-container>
             <v-row>
-                <v-col cols="12" class="pb-0">
+                <v-col cols="12" class="pa-0">
                     <div class="main-widget widget">
                     	<div class="widget__container">
                     		<div class="widget__seal">
@@ -187,7 +187,7 @@
 	}
 	.star-rate {
 	    display: flex;
-	    gap: 17px;
+	    gap: 10px;
 	    align-items: center;
 	}
 	.counter {
