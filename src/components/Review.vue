@@ -31,7 +31,7 @@
                 				<img class="content-thumb" :src="item.thumb" :alt="item.alt">
                 			</div>
                     	</div>
-                    	<div class="review__item transparent" color="transparent">
+                    	<div class="review__item review__btn transparent pa-0 d-flex justify-center" color="transparent" width="100%">
                     		<v-btn depressed outlined>
 	        					<v-icon left>
 						        	mdi-plus-circle
@@ -193,6 +193,11 @@
 
 		&__user {
 			margin-bottom: 3px;
+		}
+	}
+	.review__item {
+		&.review__btn {
+			width: 100%;
 		}
 	}
 	.user {
