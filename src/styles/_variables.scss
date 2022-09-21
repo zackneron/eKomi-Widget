@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "inter-extrabold";
+    src: local("inter"),
+     url(~/assets/inter/Inter-ExtraBold.otf) format("truetype");
+}
+@font-face {
+    font-family: "inter-bold";
+    src: local("inter"),
+     url(~/assets/inter/Inter-Bold.otf) format("truetype");
+}
+@font-face {
+    font-family: "inter-regular";
+    src: local("inter"),
+     url(~/assets/inter/Inter-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: "inter-italic";
+    src: local("inter"),
+     url(~/assets/inter/Inter-Italic.otf) format("truetype");
+}
+
+$footer-bg: #f1f1f1;
+$black: #000000;
+$brand: #0075c9;
+$white-text: #ebeef1;
+$white: #ffffff;
+
+$light-blue: #f5f7fa;
+
+$list-bg: #ebeef1;
+
+.border-left-0 {
+  border-left: none !important;
+}
+
+.inner-margin-1 {
+  margin: 10px;
+}
+
+.bg--lighten-blue {
+  background-color: $light-blue;
+}
+
+.pb-120 {
+  padding-bottom: 20%;
+}
+.px-100 {
+  padding-right: 0;
+  padding-left: 0;
+  @include sm {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
+
+.text-bg-info {
+  background-color: #f3f5f7 !important;
+}
+
+.text-primary {
+  color: #717983 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
