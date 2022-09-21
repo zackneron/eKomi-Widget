@@ -22,7 +22,7 @@
                     			<div class="user__rate d-flex justify-space-between">
                     				<div class="user__rate-date">{{item.date}}</div>
                     				<div class="user__rate-value">
-                    					<span class="counter-value">{{ item.rate }}</span> / 5
+                    					{{ item.rate }} / 5
                     				</div>
                     			</div>
                 			</div>
@@ -173,6 +173,9 @@
 			@media (max-width: 420px) {
 				max-width: 159px;
 			}
+			@media (max-width: 419px) {
+				max-width: 100%;
+			}
 			max-width: calc((100% / 2) - 5px);
 			padding: 15px;
 			@include md {
@@ -193,6 +196,12 @@
 
 		&__user {
 			margin-bottom: 3px;
+			@include sm {
+		    	margin-bottom: 10px;
+		    }
+		    @media (max-width: 419px) {
+				margin-bottom: 10px;
+			}
 		}
 	}
 	.review__item {
@@ -206,6 +215,13 @@
 			border-bottom: 1px solid #E5E5E5;
 		}
 
+		&__name {
+			@media (max-width: 419px) {
+				font-size: 16px;
+    			line-height: 18px;
+			}
+		}
+
 		&__rate-date {
 			color: #939393;
 			font-weight: 300;
@@ -216,6 +232,10 @@
 		    	font-size: 12px;
     			line-height: 13px;
 		    }
+		    @media (max-width: 419px) {
+				font-size: 16px;
+    			line-height: 18px;
+			}
 		}
 
 		&__rate-value {
@@ -225,6 +245,10 @@
 		    	font-size: 12px;
     			line-height: 13px;
 		    }
+		    @media (max-width: 419px) {
+				font-size: 16px;
+    			line-height: 18px;
+			}
 			& .counter-value {
 				font-size: 9px;
     			line-height: 10.89px;
@@ -232,6 +256,10 @@
 			    	font-size: 12px;
 	    			line-height: 13px;
 			    }
+			    @media (max-width: 419px) {
+					font-size: 12px;
+	    			line-height: 13px;
+				}
 			}
 		}
 	}
@@ -244,11 +272,18 @@
 		    @include sm {
 		    	font-size: 18px;
 		    }
+		    @media (max-width: 419px) {
+				font-size: 18px;
+			}
+
 		    &:not(:last-child){
     			margin-right: -2px;
     			@include sm {
 			    	margin-right: 1px;
 			    }
+			    @media (max-width: 419px) {
+					margin-right: 1px;
+				}
 			}
 		}
 	}
@@ -263,6 +298,10 @@
 	    	font-size: 16px;
     		line-height: 18px;
 	    }
+	    @media (max-width: 419px) {
+			font-size: 16px;
+    		line-height: 18px;
+		}
 	}
 	.content-thumb {
 		width: 100%;

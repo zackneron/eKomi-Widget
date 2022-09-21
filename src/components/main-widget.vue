@@ -87,6 +87,9 @@
 		@include md {
 			width: 106px !important;
 		}
+		@media (max-width: 419px) {
+			width: 106px !important;
+		}
 	}
 	.v-progress-linear__determinate {
 		height: 7px;
@@ -119,6 +122,10 @@
 		    @include sm {
 		    	max-width: 720px;
 		    }
+		    @media (max-width: 419px) {
+				flex-direction: column;
+				max-width: 100%;
+			}
 		}
 		&__seal {
 		    padding: 21px 15px;
@@ -136,6 +143,9 @@
 		    	max-width: 100%;
 		    	min-width: 129px;
 		    }
+		    @media (max-width: 419px) {
+				max-width: 100%;
+			}
 		}
 		&__content {
 		    padding: 20px;
@@ -160,6 +170,10 @@
 	    	font-size: 20px;
     		line-height: 22px;
 	    }
+	    @media (max-width: 419px) {
+			font-size: 20px;
+    		line-height: 22px;
+		}
 	}
 	.intro {
 	    font-size: 10px;
@@ -172,6 +186,10 @@
 	    	font-size: 16px;
     		line-height: 18px;
 	    }
+	    @media (max-width: 419px) {
+			font-size: 16px;
+    		line-height: 18px;
+		}
 	}
 	
 	.review__score {
@@ -184,6 +202,10 @@
 	    	font-size: 16px;
     		line-height: 18px;
 	    }
+	    @media (max-width: 419px) {
+			font-size: 16px;
+    		line-height: 18px;
+		}
 	}
 	.star-rate {
 	    display: flex;
@@ -218,12 +240,20 @@
     		line-height: 18px;
     		gap: 25px;
 	    }
+	    @media (max-width: 419px) {
+			font-size: 16px;
+    		line-height: 18px;
+    		gap: 25px;
+		}
 	}
 	.rate-name {
 	    width: 50px;
 	    @include sm {
 	    	width: 70px;
 	    }
+	    @media (max-width: 419px) {
+			width: 70px;
+		}
 	}
 	.rate-value {
 	    display: flex;
@@ -233,6 +263,9 @@
 	    @include sm {
     		gap: 18px;
 	    }
+	    @media (max-width: 419px) {
+			gap: 18px;
+		}
 	}
 	.value {
 	    width: 25px;
