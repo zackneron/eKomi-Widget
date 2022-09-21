@@ -106,36 +106,49 @@
     	}
 	}
 
-	.widget__container {
-	    display: flex;
-	    flex-direction: row;
-	    max-width: 380px;
-	    background: #EDEDED;
-	    border: 1px solid #D3D3D3;
-	    border-radius: 4px;
-	    margin: auto;
-	    overflow: hidden;
-	    @include sm {
-	    	max-width: 720px;
-	    }
+	.widget {
+		&__container {
+		    display: flex;
+		    flex-direction: row;
+		    max-width: 380px;
+		    background: #EDEDED;
+		    border: 1px solid #D3D3D3;
+		    border-radius: 4px;
+		    margin: auto;
+		    overflow: hidden;
+		    @include sm {
+		    	max-width: 720px;
+		    }
+		}
+		&__seal {
+		    padding: 21px 15px;
+		    text-align: center;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    gap: 10px;
+		    max-width: 129px;
+		    background: #EDEDED;
+		    border-radius: 4px 0px 0px 4px;
+		    width: 100%;
+		    @include sm {
+		    	max-width: 100%;
+		    	min-width: 129px;
+		    }
+		}
+		&__content {
+		    padding: 20px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: flex-start;
+		    padding: 20px;
+		    gap: 5px;
+		    width: 100%;
+	    	background: $white;
+		}
 	}
-	.widget__seal {
-	    padding: 21px 15px;
-	    text-align: center;
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: center;
-	    gap: 10px;
-	    max-width: 129px;
-	    background: #EDEDED;
-	    border-radius: 4px 0px 0px 4px;
-	    width: 100%;
-	    @include sm {
-	    	max-width: 100%;
-	    	min-width: 129px;
-	    }
-	}
+
 	h1 {
 	    font-family: 'inter-extrabold';
 	    font-style: normal;
@@ -160,16 +173,7 @@
     		line-height: 18px;
 	    }
 	}
-	.widget__content {
-	    padding: 20px;
-	    display: flex;
-	    flex-direction: column;
-	    align-items: flex-start;
-	    padding: 20px;
-	    gap: 5px;
-	    width: 100%;
-    	background: $white;
-	}
+	
 	.review__score {
 		color: #515151;
 	    font-family: "inter-italic";
@@ -187,8 +191,6 @@
 	    align-items: center;
 	}
 	.counter {
-	    font-family: 'Inter';
-	    font-style: normal;
 	    font-weight: 700;
 	    font-size: 18px;
 	    line-height: 39px;
